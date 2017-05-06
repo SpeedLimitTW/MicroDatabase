@@ -1,4 +1,4 @@
-#Micro Database
+# Micro Database
 
 This project is clone StaticDB, upgrade to Version 2.0
 
@@ -26,15 +26,15 @@ db.colle_init()
 db.insert({name:"Example",age:17,class:'TF201'});
 ....
 ```
-#API
+# API
 
-####Database
-#####`db.init()` to create database directory
-#####`db.colle_init()` to create collection in database
-####Collection
-#####`db.insert(Object)` - add one data
-#####`db.insert([Object])` - add multiple data
-#####`db.find([condition{Object}], [callback])`
+#### Database
+##### `db.init()` to create database directory
+##### `db.colle_init()` to create collection in database
+#### Collection
+##### `db.insert(Object)` - add one data
+##### `db.insert([Object])` - add multiple data
+##### `db.find([condition{Object}], [callback])`
 ``` js
 //multiple condition
 db.find([{age:16},{money:1700}],function(row){
@@ -46,19 +46,19 @@ db.find('Any String or not array thing',function(row){
 	console.log(row);//return Array Data
 })
 ```
-#####`db.findOne(target{Object}, [callback])` - return first find. 
-#####`db.update(object,update)` - update some data,find first and change(Worning!)
-#####`db.remove(target{Object})` - find first data and delete
-#####`db.drop()` - drop all collection 
+##### `db.findOne(target{Object}, [callback])` - return first find. 
+##### `db.update(object,update)` - update some data,find first and change(Worning!)
+##### `db.remove(target{Object})` - find first data and delete
+##### `db.drop()` - drop all collection 
 
-#Command Line Shell
-####come in (Command Line): `MicroDatabase`
-####show : 
+# Command Line Shell
+#### come in (Command Line): `MicroDatabase`
+#### show : 
 ```
 start microdatabase CLI mode! (enter help get more)
 >
 ```
-####usage :
+#### usage :
 ```
 > version
 2.0
@@ -99,13 +99,13 @@ All Shell:
 
 `class`
 
-#TCP Remote Feature
-####open online MicroDatabase
+# TCP Remote Feature
+#### open online MicroDatabase
 ```
 MicroDatabase online
 //online on your ip:3526port
 ``` 
-####other third party software client
+#### other third party software client
 ```
 send SHA-1 key...
 ```
